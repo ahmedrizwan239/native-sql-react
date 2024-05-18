@@ -35,7 +35,7 @@ function App() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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',
+        'Authorization': 'Bearer {process.env.REACT_APP_HF_KEY}',
       },
       body: JSON.stringify({
         inputs: `tables: ${schema}. question: ${query}`,
